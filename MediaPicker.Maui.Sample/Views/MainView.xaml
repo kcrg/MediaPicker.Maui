@@ -1,0 +1,59 @@
+<ContentPage
+    x:Class="MediaPicker.Maui.Sample.Views.MainView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:behaviors="clr-namespace:MediaPicker.Maui.Sample.Behaviors"
+    xmlns:models="clr-namespace:MediaPicker.Maui.Sample.Models"
+    xmlns:vm="clr-namespace:MediaPicker.Maui.Sample.ViewModels"
+    Title="MediaPicker.Maui Sample App"
+    x:DataType="vm:MainViewModel">
+    <Grid
+        Padding="16"
+        ColumnDefinitions="7*,3*"
+        ColumnSpacing="16"
+        RowDefinitions="*,Auto,Auto"
+        RowSpacing="16">
+
+        <ScrollView Grid.ColumnSpan="2" Margin="0,-16,-16,0">
+            <FlexLayout
+                Grid.ColumnSpan="2"
+                AlignContent="Start"
+                BindableLayout.ItemsSource="{Binding Images}"
+                Wrap="Wrap">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="models:ImageModel">
+                        <ContentView FlexLayout.Basis="33.3%">
+                            <ContentView.Behaviors>
+                                <behaviors:SquareViewBehavior />
+                            </ContentView.Behaviors>
+                            <Image
+                                Margin="3"
+                                Aspect="AspectFill"
+                                Source="{Binding ImageSource}" />
+                        </ContentView>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </FlexLayout>
+        </ScrollView>
+
+        <Entry
+            Grid.Row="1"
+            Keyboard="Numeric"
+            Placeholder="Compression (%)" />
+        <Entry
+            Grid.Row="1"
+            Grid.Column="1"
+            Keyboard="Numeric"
+            Placeholder="Max images count" />
+
+        <Button
+            Grid.Row="2"
+            Command="{Binding PickImagesCommand}"
+            Text="Pick" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            Command="{Binding DeleteAllCommand}"
+            Text="Delete all" />
+    </Grid>
+</ContentPage>

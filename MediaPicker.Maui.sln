@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaPicker.Maui", "MediaPicker.Maui\MediaPicker.Maui.csproj", "{681269D5-0F66-4259-ADC3-FD829D58774F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaPicker.Maui.Sample", "MediaPicker.Maui.Sample\MediaPicker.Maui.Sample.csproj", "{CF4FD70C-04AD-49D5-AF5C-99CB237DFC98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{681269D5-0F66-4259-ADC3-FD829D58774F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681269D5-0F66-4259-ADC3-FD829D58774F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681269D5-0F66-4259-ADC3-FD829D58774F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681269D5-0F66-4259-ADC3-FD829D58774F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF4FD70C-04AD-49D5-AF5C-99CB237DFC98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4FD70C-04AD-49D5-AF5C-99CB237DFC98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF4FD70C-04AD-49D5-AF5C-99CB237DFC98}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CF4FD70C-04AD-49D5-AF5C-99CB237DFC98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF4FD70C-04AD-49D5-AF5C-99CB237DFC98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF4FD70C-04AD-49D5-AF5C-99CB237DFC98}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D954F4C9-0290-4A27-BF6F-7CAB59C06705}
+	EndGlobalSection
+EndGlobal
